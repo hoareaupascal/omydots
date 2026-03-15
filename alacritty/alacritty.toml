@@ -1,0 +1,17 @@
+[general]
+	import = ["~/.config/alacritty/theme.toml"]
+
+[font]
+	size = 10
+
+[font.normal]
+	family = "JetBrainsMono Nerd Font"
+	style = "Regular"
+
+[window]
+	opacity = 0.92
+	blur = true
+	decorations = "none"
+	startup_mode = "Maximized"
+	dynamic_title = true
+	padding = { x = 5, y = 5 }

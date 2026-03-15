@@ -1,0 +1,101 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+add_newline = true
+
+# --- Layout ---
+# Note: No spaces between modules so they "lock" together
+format = """
+$username\
+$directory\
+$git_branch\
+$git_status\
+$memory_usage\
+$battery\
+$time\
+[ ](fg:rose_pine_muted)
+$character"""
+
+palette = 'rose-pine-moon'
+
+[palettes.rose-pine]
+rose_pine_base = "#191724"
+rose_pine_iris = "#c4a7e7"
+rose_pine_foam = "#9ccfd8"
+rose_pine_rose = "#ebbcba"
+rose_pine_love = "#eb6f92"
+rose_pine_gold = "#f6c177"
+rose_pine_pine = "#31748f"
+rose_pine_muted = "#6e6a86"
+
+# --- Rosé Pine Moon Hex Codes ---
+[palettes.rose-pine-moon]
+rose_pine_base = "#232136"
+rose_pine_iris = "#c4a7e7"
+rose_pine_foam = "#9ccfd8"
+rose_pine_rose = "#ea9a97"
+rose_pine_love = "#eb6f92"
+rose_pine_gold = "#f6c177"
+rose_pine_pine = "#3e8fb0"
+rose_pine_muted = "#6e6a86"
+
+[palettes.tokyonight]
+tokyonight_base = '#c0caf5'
+tokyonight_iris = '#1a1b26'
+tokyonight_foam = '#7aa2f7'
+tokyonight_rose = '#7dcfff'
+tokyonight_love = '#9ece6a'
+tokyonight_gold = '#bb9af7'
+tokyonight_pine = '#f7768e'
+tokyonight_muted = '#e0af68'
+
+# --- Username (Iris) -> Directory (Foam) ---
+[username]
+show_always = true
+style_user = "bg:rose_pine_iris fg:rose_pine_base"
+format = "[$user]($style)[](fg:rose_pine_iris bg:rose_pine_foam)"
+
+# --- Directory (Foam) -> Git (Rose) ---
+[directory]
+style = "bg:rose_pine_foam fg:rose_pine_base"
+# If not in a git repo, the next color is Gold (Memory)
+format = "[$path]($style)[](fg:rose_pine_foam bg:rose_pine_rose)"
+
+# --- Git (Rose) -> Status (Love) ---
+[git_branch]
+symbol = " 󰊢 "
+style = "bg:rose_pine_rose fg:rose_pine_base"
+format = "[$symbol$branch]($style)[](fg:rose_pine_rose bg:rose_pine_love)"
+
+# --- Status (Love) -> Memory (Gold) ---
+[git_status]
+style = "bg:rose_pine_love fg:rose_pine_base"
+format = "[$all_status$ahead_behind]($style)[](fg:rose_pine_love bg:rose_pine_gold)"
+
+# --- Memory (Gold) -> Battery (Pine) ---
+[memory_usage]
+symbol = " 󰍛 "
+disabled = false
+threshold = 0
+style = "bg:rose_pine_gold fg:rose_pine_base"
+format = "[$symbol$ram]($style)[](fg:rose_pine_gold bg:rose_pine_pine)"
+
+# --- Battery (Pine) -> Time (Muted) ---
+[battery]
+full_symbol = " 󰁹 "
+charging_symbol = " 󰂄 "
+discharging_symbol = " 󰂃 "
+disabled = false
+[[battery.display]]
+threshold = 100
+style = "bg:rose_pine_pine fg:rose_pine_base"
+format = "[$symbol$percentage]($style)[](fg:rose_pine_pine bg:rose_pine_muted)"
+
+# --- Time (Muted) -> End ---
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:rose_pine_muted fg:rose_pine_base"
+format = "[ 󱑒 $time ]($style)" # No arrow at the very end here, it's in the 'format' above
+
+[character]
+success_symbol = "[󰄛](bold rose_pine_iris) "
+error_symbol = "[󰄛](bold rose_pine_love) "
