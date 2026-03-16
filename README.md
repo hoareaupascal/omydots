@@ -3,7 +3,7 @@
 > A minimalist, lightning-fast theme switcher and configurator for the modern terminal.
 
 <p align="center">
-  <img src="assets/omydots.png" alt="omydots preview">
+  <img src="img/omydots.png" alt="omydots preview">
 </p>
 
 **omydots** is a lightweight theme manager designed for users who love to switch vibes instantly. Instead of manually editing config files, `omydots` uses a "pointer" system to swap themes across multiple applications simultaneously using a beautiful `fzf` interface.
