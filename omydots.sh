@@ -11,6 +11,46 @@ BTOP_CONF="$HOME/.config/btop/btop.conf"
 
 # --- Functions ---
 
+zellij_config(){
+  clear
+  cat <<"EOF"
+ ________  ____   _______ _____ _____ _____ 
+|  _  |  \/  \ \ / /  _  \  _  |_   _/  ___|
+| | | | .  . |\ V /| | | | | | | | | \ `--. 
+| | | | |\/| | \ / | | | | | | | | |  `--. \
+\ \_/ / |  | | | | | |/ /\ \_/ / | | /\__/ /
+ \___/\_|  |_/ \_/ |___/  \___/  \_/ \____/ 
+         
+EOF
+  echo -e "\n\e[2m▲ Up  ▼ Down  ↵ Enter: Submit\e[0m"
+
+  # Define the list of theme display names
+  options="Blade Runner\nCyber Noir\nDracula\nTokyo Night\nBack"
+
+  # Use fzf for theme selection
+  choice=$(echo -e "$options" | fzf --height 15% --layout=reverse --header="Select Starship Theme:")
+
+  case "$choice" in
+  "Blade Runner")
+    sed -i 's/^theme ".*"/theme "blade-runner"/' ~/.config/zellij/config.kdl
+    ;;
+  "Cyber Noir")
+    sed -i 's/^theme ".*"/theme "cyber-noir"/' ~/.config/zellij/config.kdl
+    ;;
+  "Dracula")
+    sed -i 's/^theme ".*"/theme "dracula"/' ~/.config/zellij/config.kdl
+    ;;
+  "Tokyo Night")
+    sed -i 's/^theme ".*"/theme "tokyonight"/' ~/.config/zellij/config.kdl
+    ;;
+
+  *) return ;; # Back or ESC
+  esac
+
+  echo "✨ Zellij style Updated to $choice!"
+  sleep 1 
+}
+
 starship_config() {
   clear
   cat <<"EOF"
@@ -141,7 +181,7 @@ EOF
   echo -e "\n\e[2m▲ Up  ▼ Down  ↵ Enter: Submit\e[0m"
 
   # Define Main Menu Options
-  main_options="1. Themes Manager\n2. Config\n3. Exit"
+  main_options="1. Themes Manager\n2. Starship\n3. Zellij\n4. Exit"
 
   # Use FZF for the Main Menu
   # --prompt sets the text next to the cursor
@@ -149,7 +189,8 @@ EOF
 
   case "$sel" in
   *"Themes Manager") change_theme ;;
-  *"Config") starship_config ;;
+  *"Starship") starship_config ;;
+  *"Zellij") zellij_config ;;
   *"Exit" | "")
     echo "See ya!"
     break
