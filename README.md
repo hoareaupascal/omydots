@@ -1,5 +1,6 @@
 
-# 🎨 omydots
+# 🎨 omydots  
+![Alacritty](https://img.shields.io/badge/Alacritty-2496ED?style=for-the-badge&logo=alacritty&logoColor=white)
 > A minimalist, lightning-fast theme switcher and configurator for the modern terminal.
 
 <p align="center">
