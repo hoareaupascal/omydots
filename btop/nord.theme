@@ -1,0 +1,47 @@
+# Nord theme for btop
+# Generated from Alacritty hex codes
+
+# Main background and text
+theme[main_bg]="#2e3440"
+theme[main_fg]="#d8dee9"
+
+# Title and headers (using your Accent/Blue)
+theme[title]="#81a1c1"
+theme[hi_fg]="#81a1c1"
+theme[selected_bg]="#4c566a"
+theme[selected_fg]="#d8dee9"
+
+# Graph and meter colors
+# Green to Yellow to Red gradient
+theme[cpu_start]="#a3be8c"
+theme[cpu_mid]="#ebcb8b"
+theme[cpu_end]="#bf616a"
+
+theme[free_start]="#a3be8c"
+theme[free_mid]="#ebcb8b"
+theme[free_end]="#bf616a"
+
+theme[cached_start]="#81a1c1"
+theme[cached_mid]="#88c0d0"
+theme[cached_end]="#8fbcbb"
+
+theme[available_start]="#ebcb8b"
+theme[available_mid]="#d08770"
+theme[available_end]="#bf616a"
+
+# Processes and Mem
+theme[proc_misc]="#b48ead"
+theme[mem_start]="#a3be8c"
+theme[mem_mid]="#ebcb8b"
+theme[mem_end]="#bf616a"
+
+# Network
+theme[net_start]="#81a1c1"
+theme[net_mid]="#b48ead"
+theme[net_end]="#bf616a"
+
+# Meters and boxes
+theme[div_line]="#4c566a"
+theme[temp_start]="#81a1c1"
+theme[temp_mid]="#ebcb8b"
+theme[temp_end]="#bf616a"

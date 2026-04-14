@@ -1,0 +1,45 @@
+# Catppuccin Mocha btop theme
+
+# Main background and text
+theme[main_bg]="#1e1e2e"
+theme[main_fg]="#cdd6f4"
+
+# Title and headers (using Lavender/Blue)
+theme[title]="#b4befe"
+theme[hi_fg]="#89b4fa"
+theme[selected_bg]="#45475a"
+theme[selected_fg]="#f5e0dc"
+
+# Graph and meter colors (Green -> Yellow -> Red)
+theme[cpu_start]="#a6e3a1"
+theme[cpu_mid]="#f9e2af"
+theme[cpu_end]="#f38ba8"
+
+theme[free_start]="#a6e3a1"
+theme[free_mid]="#f9e2af"
+theme[free_end]="#f38ba8"
+
+theme[cached_start]="#89b4fa"
+theme[cached_mid]="#b4befe"
+theme[cached_end]="#f5c2e7"
+
+theme[available_start]="#f9e2af"
+theme[available_mid]="#fab387"
+theme[available_end]="#f38ba8"
+
+# Processes and Mem
+theme[proc_misc]="#f5c2e7"
+theme[mem_start]="#a6e3a1"
+theme[mem_mid]="#f9e2af"
+theme[mem_end]="#f38ba8"
+
+# Network (Sapphire to Lavender)
+theme[net_start]="#89b4fa"
+theme[net_mid]="#94e2d5"
+theme[net_end]="#b4befe"
+
+# Meters and boxes
+theme[div_line]="#585b70"
+theme[temp_start]="#89b4fa"
+theme[temp_mid]="#f9e2af"
+theme[temp_end]="#f38ba8"
