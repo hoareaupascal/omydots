@@ -8,10 +8,11 @@ NVIM_TARGET="$HOME/.config/nvim/lua/plugins/colorscheme.lua"
 STARSHIP_TARGET="$HOME/.config/starship.toml"
 STARSHIP_THEME_DIR="$HOME/omydots/starship"
 BTOP_CONF="$HOME/.config/btop/btop.conf"
+OPENCODE_CONF="$HOME/.config/opencode/tui.json"
 
 # --- Functions ---
 
-zellij_config(){
+zellij_config() {
   clear
   cat <<"EOF"
  ________  ____   _______ _____ _____ _____ 
@@ -48,7 +49,7 @@ EOF
   esac
 
   echo "✨ Zellij style Updated to $choice!"
-  sleep 1 
+  sleep 1
 }
 
 starship_config() {
@@ -127,30 +128,35 @@ EOF
     a_theme="tokyo-night.toml"
     n_theme="tokyo-night.lua"
     b_theme="tokyo-night.theme"
+    o_theme="tokyonight"
     ;;
   "Catpuccin Mocha")
     v_name="tokyonight"
     a_theme="catpuccin-mocha.toml"
     n_theme="catpuccin-mocha.lua"
     b_theme="catpuccin-mocha.theme"
+    o_theme="catpuccin"
     ;;
   "Nord")
     v_name="nord"
     a_theme="nord.toml"
     n_theme="nord.lua"
     b_theme="nord.theme"
+    o_theme="nord"
     ;;
   "Vantablack")
     v_name="city-783"
     a_theme="vantablack.toml"
     n_theme="vantablack.lua"
     b_theme="vantablack.theme"
+    o_theme="vesper"
     ;;
   "City 783")
     v_name="city-783"
     a_theme="city-783.toml"
     n_theme="city-783.lua"
     b_theme="city-783.theme"
+    icons_theme="Yaru-red"
     ;;
   "Cpunk")
     v_name="cpunk"
@@ -166,7 +172,9 @@ EOF
   cp "$ALACRITTY_THEME_DIR/$a_theme" "$ALACRITTY_ACTIVE"
   cp "$NVIM_THEME_DIR/$n_theme" "$NVIM_TARGET"
   sed -i "s|^color_theme =.*|color_theme = \"$b_theme\"|" "$BTOP_CONF"
-  
+  sed -i 's/"theme": ".*"/"theme": "'"$o_theme"'"/' "$OPENCODE_CONF"
+  gsettings set org.gnome.desktop.interface icon-theme $icons_theme
+
   echo "✨ Style Updated to $choice!"
   sleep 1
 }
@@ -204,4 +212,3 @@ EOF
   esac
 
 done
-
