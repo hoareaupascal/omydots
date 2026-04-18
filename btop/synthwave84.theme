@@ -1,0 +1,50 @@
+# Main background, empty for terminal default, any hex color for specific background
+theme[main_bg]=""
+
+# Main text color
+theme[main_fg]="#ffffff"
+
+# Title color for boxes
+theme[title]="#ff7edb"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#03edf9"
+
+# Background color of selected item in lists
+theme[selected_bg]="#444351"
+
+# Foreground color of selected item in lists
+theme[selected_fg]="#ff7edb"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="#848bb2"
+
+# Color of graph edges and box borders
+theme[graph_text]="#fe4450"
+theme[proc_misc]="#ff7edb"
+
+# CPU graph colors
+theme[cpu_start]="#03edf9"
+theme[cpu_mid]="#ff7edb"
+theme[cpu_end]="#fe4450"
+
+# Mem graph colors
+theme[mem_start]="#72f1b8"
+theme[mem_mid]="#fede5d"
+theme[mem_end]="#ff7edb"
+
+# Net graph colors
+theme[net_start]="#03edf9"
+theme[net_mid]="#ff7edb"
+theme[net_end]="#fe4450"
+
+# Process box color
+theme[proc_box]="#444351"
+
+# Box borders
+theme[div_line]="#444351"
+
+# Temperature graph colors
+theme[temp_start]="#fede5d"
+theme[temp_mid]="#fe4450"
+theme[temp_end]="#ff7edb"
