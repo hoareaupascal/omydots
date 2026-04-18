@@ -14,10 +14,10 @@
 Application,Configuration Location
 | App Name          | Config Files                                      |
 |-------------------|---------------------------------------------------|
-| **Alacritty**   | `~/.config/alacritty`<br>`~/.config/alacritty/alacritty.toml`   |
+| Alacritty   | `~/.config/alacritty`<br>`~/.config/alacritty/alacritty.toml`   |
 | **Neovim**     | `~/.config/nvim/lua/plugins/colorscheme.lua`                           |
-| **Btop**   | `config/api.toml`                                 |
-| **Starship**   | `config/starship`                                 |
+| **Btop**   | `~/.config/btop/btop.conf`<br>`~/.config/btop/themes`                                 |
+| **Starship**   | `~/.config/starship`                                 |
 | **Zellij**   | `config/api.toml`                                 |
 
 ---
