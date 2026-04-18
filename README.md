@@ -7,16 +7,15 @@
   <img src="img/omydots.png" alt="omydots preview">
 </p>
 
-**omydots** is a lightweight theme manager designed for users who love to switch vibes instantly. Instead of manually editing config files, `omydots` uses a "pointer" system to swap themes across multiple applications simultaneously using a beautiful `fzf` interface.
+**omydots** is a lightweight theme manager designed for users who love to switch vibes instantly. Instead of manually editing config files, `omydots` uses a "pointer" system to swap themes across multiple applications simultaneously using a beautiful `fzf` interface. It is compatible with all Linux distros and MacOS.
 
 ---
 
 ## ✨ Supported Applications
-Currently, **omydots** synchronizes the following:
-* 🚀 **Alacritty** (Terminal Emulator)
-* 📟 **Btop** (System Monitor)
-* 🌑 **Neovim** (Text Editor)
-* *(More coming soon!)*
+Application,Configuration Location
+🚀 Alacritty,~/.config/alacritty/alacritty.toml
+📟 Btop,~/.config/btop/btop.conf
+🌑 Neovim,~/.config/nvim/init.lua  
 
 ---
 
