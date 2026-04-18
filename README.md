@@ -15,8 +15,10 @@ Application,Configuration Location
 | App Name          | Config Files                                      |
 |-------------------|---------------------------------------------------|
 | **Alacritty**   | `config/settings.json`<br>`config/.env.example`   |
-| **Dashboard**     | `config/dashboard.yaml`                           |
-| **API Service**   | `config/api.toml`                                 |
+| **Neovim**     | `config/dashboard.yaml`                           |
+| **Btop**   | `config/api.toml`                                 |
+| **Starship**   | `config/starship`                                 |
+| **Zellij**   | `config/api.toml`                                 |
 
 ---
 
