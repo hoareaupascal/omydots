@@ -111,7 +111,7 @@ EOF
   echo -e "\n\e[2m▲ Up  ▼ Down  ↵ Enter: Submit\e[0m"
 
   # Define the list of theme display names
-  options="Rose Pine Moon\nTokyo Night\nCatpuccin Mocha\nNord\nVantablack\nEverforest\nOsaka-Jade\nCity 783\nCpunk\nBack"
+  options="Rose Pine Moon\nTokyo Night\nCatpuccin Latte\nCatpuccin Mocha\nNord\nVantablack\nEverforest\nOsaka-Jade\nCity 783\nCpunk\nBack"
 
   # Use fzf for theme selection
   choice=$(echo -e "$options" | fzf --height 15% --layout=reverse --header="Select Your Aesthetic:")
@@ -129,6 +129,13 @@ EOF
     n_theme="tokyo-night.lua"
     b_theme="tokyo-night.theme"
     o_theme="tokyonight"
+    ;;
+  "Catpuccin Latte")
+    v_name="catpuccin-latte"
+    a_theme="catpuccin-latte.toml"
+    n_theme="catpuccin-latte.lua"
+    b_theme="catpuccin-latte.theme"
+    o_theme="catpuccin"
     ;;
   "Catpuccin Mocha")
     v_name="tokyonight"
