@@ -14,8 +14,8 @@
 Application,Configuration Location
 | App Name          | Config Files                                      |
 |-------------------|---------------------------------------------------|
-| **Alacritty**   | `config/settings.json`<br>`config/.env.example`   |
-| **Neovim**     | `config/dashboard.yaml`                           |
+| **Alacritty**   | `~/.config/alacritty`<br>`~/.config/alacritty/alacritty.toml`   |
+| **Neovim**     | `~/.config/nvim/lua/plugins/colorscheme.lua`                           |
 | **Btop**   | `config/api.toml`                                 |
 | **Starship**   | `config/starship`                                 |
 | **Zellij**   | `config/api.toml`                                 |
