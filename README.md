@@ -11,11 +11,10 @@
 
 ---
 
-## ✨ Supported Applications
 Application,Configuration Location
 🚀 Alacritty,~/.config/alacritty/alacritty.toml
 📟 Btop,~/.config/btop/btop.conf
-🌑 Neovim,~/.config/nvim/init.lua  
+🌑 Neovim,~/.config/nvim/init.lua
 
 ---
 
