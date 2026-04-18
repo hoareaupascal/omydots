@@ -12,9 +12,11 @@
 ---
 
 Application,Configuration Location
-🚀 Alacritty,~/.config/alacritty/alacritty.toml
-📟 Btop,~/.config/btop/btop.conf
-🌑 Neovim,~/.config/nvim/init.lua
+| App Name          | Config Files                                      |
+|-------------------|---------------------------------------------------|
+| **Alacritty**   | `config/settings.json`<br>`config/.env.example`   |
+| **Dashboard**     | `config/dashboard.yaml`                           |
+| **API Service**   | `config/api.toml`                                 |
 
 ---
 
