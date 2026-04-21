@@ -17,8 +17,8 @@ Application,Configuration Location
 | Alacritty   | `~/.config/alacritty`<br>`~/.config/alacritty/alacritty.toml`   |
 | **Neovim**     | `~/.config/nvim/lua/plugins/colorscheme.lua`                           |
 | **Btop**   | `~/.config/btop/btop.conf`<br>`~/.config/btop/themes`                                 |
-| **Starship**   | `~/.config/starship`                                 |
-| **Zellij**   | `config/api.toml`                                 |
+| **Starship**   | `~/.config/starship.toml`<br>`~/.config/starship/`                                 |
+| **Zellij**   | `~/.config/zellij/config.kdl`                                 |
 
 ---
 
