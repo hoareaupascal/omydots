@@ -32,7 +32,6 @@ Ensure you have the following installed:
 
 ### 2. Clone and Install
 Clone the repository and run the install script. 
-> **Note:** The installer will automatically back up your existing `alacritty.toml` to `alacritty.toml.bak`.
 
 ```bash
 git clone https://github.com/hoareaupascal/omydots.git
