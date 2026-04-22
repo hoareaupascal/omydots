@@ -43,14 +43,14 @@ cd omydots
   <summary>📸 Click to view Screenshots</summary>
   
   <p align="center">
-    <img src="img/omydots.png" width="80%" alt="Description 1">
+    <img src="img/tokyonight.png" width="80%" alt="tokyonight omydots">
     <br>
-    <em>First Slide: Homepage view</em>
+    <em>Tokyonight</em>
   </p>
 
   <p align="center">
-    <img src="img/omydots.png" width="80%" alt="Description 2">
+    <img src="img/catpuccin-mocha" width="80%" alt="catpuccin omydots">
     <br>
-    <em>Second Slide: Settings dashboard</em>
+    <em>Catpuccin Mocha</em>
   </p>
 </details>
