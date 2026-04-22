@@ -39,7 +39,6 @@ cd omydots
 ./install.sh
 ```
 
-```
 <details>
   <summary>📸 Click to view Screenshots</summary>
   
@@ -55,4 +54,3 @@ cd omydots
     <em>Second Slide: Settings dashboard</em>
   </p>
 </details>
-```
