@@ -49,7 +49,7 @@ cd omydots
   </p>
 
   <p align="center">
-    <img src="img/catpuccin-mocha" width="80%" alt="catpuccin omydots">
+    <img src="img/catpuccin-mocha.png" width="80%" alt="catpuccin omydots">
     <br>
     <em>Catpuccin Mocha</em>
   </p>
