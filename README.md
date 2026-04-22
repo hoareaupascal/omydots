@@ -37,6 +37,7 @@ Clone the repository and run the install script.
 git clone https://github.com/hoareaupascal/omydots.git
 cd omydots
 ./install.sh
+```
 
 ```
 <details>
