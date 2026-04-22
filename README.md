@@ -38,7 +38,7 @@ git clone https://github.com/hoareaupascal/omydots.git
 cd omydots
 ./install.sh
 ```
-
+### 3. Preview
 <details>
   <summary>📸 Click to view Screenshots</summary>
   
