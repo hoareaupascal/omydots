@@ -37,3 +37,19 @@ Clone the repository and run the install script.
 git clone https://github.com/hoareaupascal/omydots.git
 cd omydots
 ./install.sh
+
+<details>
+  <summary>📸 Click to view Screenshots</summary>
+  
+  <p align="center">
+    <img src="img/omydots.png" width="80%" alt="Description 1">
+    <br>
+    <em>First Slide: Homepage view</em>
+  </p>
+
+  <p align="center">
+    <img src="img/omydots.png" width="80%" alt="Description 2">
+    <br>
+    <em>Second Slide: Settings dashboard</em>
+  </p>
+</details>
