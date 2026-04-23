@@ -58,6 +58,6 @@ cd omydots
   <p align="center">
     <img src="img/gruvbox.png" width="80%" alt="catpuccin omydots">
     <br>
-    <em>Catpuccin Mocha</em>
+    <em>Gruvbox</em>
   </p>
 </details>
