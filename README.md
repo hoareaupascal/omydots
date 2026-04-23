@@ -19,6 +19,7 @@ Application,Configuration Location
 | **Btop**   | `~/.config/btop/btop.conf`<br>`~/.config/btop/themes`                                 |
 | **Starship**   | `~/.config/starship.toml`<br>`~/.config/starship/`                                 |
 | **Zellij**   | `~/.config/zellij/config.kdl`                                 |
+| **Opencode**   | `~/.config/opencode/tui.json`                                 |
 
 ---
 
