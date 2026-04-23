@@ -25,25 +25,41 @@ zellij_config() {
 EOF
   echo -e "\n\e[2m▲ Up  ▼ Down  ↵ Enter: Submit\e[0m"
 
-  # Define the list of theme display names
-  options="Blade Runner\nCyber Noir\nDracula\nTokyo Night\nBack"
+  # Alphabetized list of theme display names
+  options="ansi\nao\natelier-sulphurpool\nayu_dark\nayu_mirage\nblade-runner\ncatppuccin-frappe\ncatppuccin-macchiato\ncyber-noir\ndracula\neverforest-dark\ngruvbox-dark\niceberg-dark\nkanagawa\nlucario\nmenace\nmolokai-dark\nnight-owl\nnightfox\nnord\none-half-dark\nonedark\nretro-wave\nsolarized-dark\ntokyo-night\ntokyo-night-dark\ntokyo-night-storm\nvesper\nBack"
 
   # Use fzf for theme selection
-  choice=$(echo -e "$options" | fzf --height 15% --layout=reverse --header="Select Starship Theme:")
+  choice=$(echo -e "$options" | fzf --height 15% --layout=reverse --header="Select Zellij Theme:")
 
   case "$choice" in
-  "Blade Runner")
-    sed -i 's/^theme ".*"/theme "blade-runner"/' ~/.config/zellij/config.kdl
-    ;;
-  "Cyber Noir")
-    sed -i 's/^theme ".*"/theme "cyber-noir"/' ~/.config/zellij/config.kdl
-    ;;
-  "Dracula")
-    sed -i 's/^theme ".*"/theme "dracula"/' ~/.config/zellij/config.kdl
-    ;;
-  "Tokyo Night")
-    sed -i 's/^theme ".*"/theme "tokyonight"/' ~/.config/zellij/config.kdl
-    ;;
+  "ansi") sed -i 's/^theme ".*"/theme "ansi"/' ~/.config/zellij/config.kdl ;;
+  "ao") sed -i 's/^theme ".*"/theme "ao"/' ~/.config/zellij/config.kdl ;;
+  "atelier-sulphurpool") sed -i 's/^theme ".*"/theme "atelier-sulphurpool"/' ~/.config/zellij/config.kdl ;;
+  "ayu_dark") sed -i 's/^theme ".*"/theme "ayu_dark"/' ~/.config/zellij/config.kdl ;;
+  "ayu_mirage") sed -i 's/^theme ".*"/theme "ayu_mirage"/' ~/.config/zellij/config.kdl ;;
+  "blade-runner") sed -i 's/^theme ".*"/theme "blade-runner"/' ~/.config/zellij/config.kdl ;;
+  "catppuccin-frappe") sed -i 's/^theme ".*"/theme "catppuccin-frappe"/' ~/.config/zellij/config.kdl ;;
+  "catppuccin-macchiato") sed -i 's/^theme ".*"/theme "catppuccin-macchiato"/' ~/.config/zellij/config.kdl ;;
+  "cyber-noir") sed -i 's/^theme ".*"/theme "cyber-noir"/' ~/.config/zellij/config.kdl ;;
+  "dracula") sed -i 's/^theme ".*"/theme "dracula"/' ~/.config/zellij/config.kdl ;;
+  "everforest-dark") sed -i 's/^theme ".*"/theme "everforest-dark"/' ~/.config/zellij/config.kdl ;;
+  "gruvbox-dark") sed -i 's/^theme ".*"/theme "gruvbox-dark"/' ~/.config/zellij/config.kdl ;;
+  "iceberg-dark") sed -i 's/^theme ".*"/theme "iceberg-dark"/' ~/.config/zellij/config.kdl ;;
+  "kanagawa") sed -i 's/^theme ".*"/theme "kanagawa"/' ~/.config/zellij/config.kdl ;;
+  "lucario") sed -i 's/^theme ".*"/theme "lucario"/' ~/.config/zellij/config.kdl ;;
+  "menace") sed -i 's/^theme ".*"/theme "menace"/' ~/.config/zellij/config.kdl ;;
+  "molokai-dark") sed -i 's/^theme ".*"/theme "molokai-dark"/' ~/.config/zellij/config.kdl ;;
+  "night-owl") sed -i 's/^theme ".*"/theme "night-owl"/' ~/.config/zellij/config.kdl ;;
+  "nightfox") sed -i 's/^theme ".*"/theme "nightfox"/' ~/.config/zellij/config.kdl ;;
+  "nord") sed -i 's/^theme ".*"/theme "nord"/' ~/.config/zellij/config.kdl ;;
+  "one-half-dark") sed -i 's/^theme ".*"/theme "one-half-dark"/' ~/.config/zellij/config.kdl ;;
+  "onedark") sed -i 's/^theme ".*"/theme "onedark"/' ~/.config/zellij/config.kdl ;;
+  "retro-wave") sed -i 's/^theme ".*"/theme "retro-wave"/' ~/.config/zellij/config.kdl ;;
+  "solarized-dark") sed -i 's/^theme ".*"/theme "solarized-dark"/' ~/.config/zellij/config.kdl ;;
+  "tokyo-night") sed -i 's/^theme ".*"/theme "tokyo-night"/' ~/.config/zellij/config.kdl ;;
+  "tokyo-night-dark") sed -i 's/^theme ".*"/theme "tokyo-night-dark"/' ~/.config/zellij/config.kdl ;;
+  "tokyo-night-storm") sed -i 's/^theme ".*"/theme "tokyo-night-storm"/' ~/.config/zellij/config.kdl ;;
+  "vesper") sed -i 's/^theme ".*"/theme "vesper"/' ~/.config/zellij/config.kdl ;;
 
   *) return ;; # Back or ESC
   esac
