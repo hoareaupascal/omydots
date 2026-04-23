@@ -11,7 +11,7 @@
 
 ---
 
-Application,Configuration Location
+Apps and config files location  
 | App Name          | Config Files                                      |
 |-------------------|---------------------------------------------------|
 | Alacritty   | `~/.config/alacritty`<br>`~/.config/alacritty/alacritty.toml`   |
