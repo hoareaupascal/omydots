@@ -30,6 +30,7 @@ Ensure you have the following installed:
 * `fzf` (The fuzzy finder)
 * `git`
 * `nerfonts` (nerdfonts.com)
+* `LazyVim` (https://www.lazyvim.org/)
 
 ### 2. Clone and Install
 Clone the repository and run the install script. 
